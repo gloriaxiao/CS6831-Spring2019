@@ -18,6 +18,9 @@ NYC classroom: Bloomberg 091
 
 Ithaca classroom: Gates 405
 
+Video recordings:
+[Available here](https://cornell.mediasite.com/Mediasite/Catalog/Full/01abe090c34c4419894e68d9cbdb7eef21)  (Cornell login required)
+
 ### Pre-requisites
 
 By the end of the class you should have the ability to design and argue the
@@ -58,7 +61,7 @@ will be to have a complete set of notes for future reference. We will figure out
 early on the scribing schedule. Each student will be responsible for
 delivering one or more complete writeups of lecture topic(s).  This will notably
 include finished, precise proofs that may be only covered at a high level in
-class, accompanied by beautiful English prose.  
+class, accompanied by beautiful English prose.  See new section added below.
 
 Second will be a semester project, the aspirational goal being a
 publication-worthy result in applied cryptography. The project deliverable will
@@ -67,7 +70,8 @@ Zoom) with the me about the result. A paper worked on with others can substitute
 for the short report, though you will need to identify your specific
 contributions.  The one-on-one discussion will allow you to gain practice
 describing your work in a professional setting, allow me to assess what you've
-learned from the class, and help determine your final grade. 
+learned from the class, and help determine your final grade. More details
+will be forthcoming. 
 
 I may also point out problems or omitted proofs that you will want to work on to
 solidify your understanding of material. These will be ungraded, but I can give
@@ -79,6 +83,71 @@ Grades will be assigned according to the following breakdown:
 * Scribe notes :  40% 
 * Project:  40% 
 
+### Scribing
+
+I will send out a spreadsheet with a tentativie scribing schedule.  PhD students
+will be doing scribing.  There will be one scribe and two proofreaders for each
+lecture. The scribe will write up an initial draft of the notes for the lecture,
+and the proofreaders will provide technical and editorial feedback before I take
+a look. The scribe and proofreaders are, together, also responsible for coming
+up with three self-study questions (i.e., homework problems) that speak to the
+material. These should not be questions that require regurgitating something,
+but rather that make people think deeply about the material.  Feel free to
+borrow problems from public sources (e.g., Boneh-Shoup book), but be very clear
+about attribution (even if it was just used for inspiration) and include the
+attribution in the notes. 
+Initial draft is due a week after lecture, and proof-read finald raft 1.5 weeks
+after lecture. If there's going to be some reason for a delay, let me know.
+
+The masters students will be responsible for testing out (a reasonable subset)
+of these questions by working out candidate solutions individually. We'll group
+things into ~6-lecture chunks, and assign a problem from each. So masters
+students can expect 3 problem sets, finishing 3/4 of the way through the
+class to minimize problem set and end-of-term project overlaps. If the problems
+are too hard, we'll adjust accordingly how many students need to solve.  These
+will be peer-graded by the PhD student(s) who first conceived the problem with
+my oversight and final approval of grading.  The involved PhD students and
+masters students will determine the worst solution, and the responsible student
+will get the honor of typesetting a correct solution for inclusion in an
+appendix in the notes. They can use as reference all the solutions, and work
+with whomever can help them out to do so. For the masters students the 40\% of
+class grade will be associated to performance on problem sets. Of course, MS
+students can help out with proof-reading and embellishments to scribe notes via
+pull requests (see below), and this will positively count towards your
+participation and scribe grades.
+
+I have added the notes to the git repository. You can therefore fork this
+repository, work in a local copy, and then submit a pull request to me once the
+notes are ready for my review. They should already be proofread by both
+proofreaders before a PR comes in. Let me know if this workflow doesn't work out
+for you. 
+
+The end result should be an open-source set of notes that others can use as they
+explore this topic. Everyone who finishes the class will get appropriate credit
+for contributing. 
+
+All this will require some good will and coordination among students. If anyone
+has any concerns or problems, don't hesitate to talk to me.
+
+
+### Project
+
+We will partition semester project into two milestones. The first is a proposal,
+due on March 6, via email. It should be no more than one page, and be a brief
+description of the proposed project. It is ok to have groups, but the level of
+work should scale in the size of the group. The final deliverable will be a
+project report due at end of semester, exact date to be determined. 
+
+The project should have a well-defined goal that is on the cutting edge of
+cryptography, the litmus being some publishable result (not necessarily a whole
+paper, but a result within a publishable paper would be fine). You can propose 
+an ongoing research project as your class project, but make sure I know who is
+involved, what your contribution will be. Similarly the writeup can be
+dovetailed with a research paper in preparation, with the same requirement that
+your writing contribution should be identifiable.
+
+Time allowing we'll have either group presentations at the end of the semester,
+or meetings with just me to go over the project and other topics. 
 
 ### Background reading
 
@@ -108,35 +177,36 @@ A very preliminary and aspirational schedule is below to give a taste of the sco
 what we're hoping to cover.  
 
 
-| Date |  Topic  |  Note |
-|------|---------|--------|
-| Jan 23 | Intro |  [Slides](slides/intro-lec1.pdf) |
-| Jan 28 | Block ciphers, PRPs, PRFs |  |
-| Jan 30 | Cryptanalysis, frequency attacks |  |
-| Feb 4 |  PRGs, Block cipher modes |  |
-| Feb 6 |  Message authentication, universal hashing | |
-| Feb 11 | Authenticated encryption |  |
-| Feb 13 | Nonce-based and robust authenticated encryption |   |
-| Feb 18 | Cryptographic hashing  |  |
-| Feb 20 | Password hashing, randomness extractors |  |
-| Feb 25 | No Lecture (February break) |
-| Feb 27 | Public-key encryption |  |
-| Mar 4  | RSA PKE |  |
-| Mar 6  | Discrete log PKE  |  |
-| Mar 11 | ECC crypto  |  |
-| Mar 13 | Digital signatures | |
-| Mar 18 | Blind signatures and OPRFs  | |
-| Mar 20 | Identification protocols and Fiat-Shamir |   |
-| Mar 27 | Zero-knowledge proofs  |  |
-| Apr 1  | No lecture (Spring Break) |  |
-| Apr 3  | No lecture (Spring Break) |  |
-| Apr 8  | Key exchange | |
-| Apr 10 | TLS 1.3  | |
-| Apr 15 | Signal   | |
-| Apr 17 | Group messaging | |
-| Apr 22 | Encrypted databases | |
-| Apr 24 | TBA | |
-| Apr 29 | TBA | |
-| May 1  | TBA | |
-| May 6  | TBA |  |
+| Date |  Topic  |  Slides | Notes |
+|------|---------|---------|-------|
+| Jan 23 | Intro |  [Slides](slides/intro-lec1.pdf) | |
+| Jan 28 | Block ciphers, PRPs, PRFs | [Slides](slides/ciphers-lec2.pdf) | |
+| Jan 30 | PRP/PRF Switching lemma, Luby-Rackoff, Shuffling | [Slides](slides/ciphers2-lec3-markup.pptx) | |
+| Feb 4 |  Block ciphers, cryptanalysis  | [Slides](slides/cryptanalysis-lec4.pptx) | |
+| Feb 6 |   Frequency analysis, tweakable block ciphers |[Slides](slides/tweakciphers-lec5.pptx) | |
+| Feb 11 | Tweakable block ciphers, randomized encryption | [Slides](slides/tweakciphers-lec6-markup.pptx) | |
+| Feb 13 | Randomized encryption | [Slides](slides/randomized-lec7_markup.pptx)  | |
+| Feb 18 | Authenticated encryption  | [Slides](slides/activeattacks-lec8-markup.pptx)  | |
+| Feb 20 | Message authentication | [Slides](slides/unforgeability-lec9.pptx)  | |
+| Feb 25 | No Lecture (February break) | |
+| Feb 27 | AE in practice and theory | [Slides](slides/advancedAE-lec10.pptx) | |
+| Mar 4  | Class cancelled |  | |
+| Mar 6  | Hash functions  |[Slides](slides/hashfunctions-lec11.pptx)  | |
+| Mar 11 | Hash functions 2 | [Slides](slides/hashfunctions-lec12.pptx) | |
+| Mar 13 | Hash functions 3 | [Slides](slides/hashfunctions-lec13.pptx) | |
+| Mar 18 | Public key encryption / RSA | [Slides](slides/pke.pptx)| |
+| Mar 20 | Public-key encryption / El Gamal  |   | |
+| Mar 25 | Chosen-ciphertext attacks |   | |
+| Mar 27 | Anonymous key exchange  |  | |
+| Apr 1  | No lecture (Spring Break) |  | |
+| Apr 3  | No lecture (Spring Break) |  | |
+| Apr 8  | Digital signatures | | |
+| Apr 10 | TLS 1.3  | | |
+| Apr 15 | Signal   | | |
+| Apr 17 | Group messaging | | |
+| Apr 22 | Identification protocols and Fiat-Shamir | | |
+| Apr 24 | Zero-knowledge proofs | | |
+| Apr 29 |  TBA | | |
+| May 1  | TBA | | |
+| May 6  | TBA |  | |
 
